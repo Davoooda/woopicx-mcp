@@ -1,0 +1,38 @@
+{
+  "name": "woopicx-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Woopicx — search 40+ free collections of 3D icons, mockups, illustrations and stock images from Claude, Cursor and other MCP clients.",
+  "type": "module",
+  "bin": {
+    "woopicx-mcp": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "woopicx",
+    "icons",
+    "3d-icons",
+    "mockups",
+    "stock-images",
+    "graphics",
+    "claude",
+    "cursor"
+  ],
+  "author": "Woopicx",
+  "license": "MIT",
+  "homepage": "https://woopicx.com/api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davoooda/woopicx-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Davoooda/woopicx-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
