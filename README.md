@@ -16,9 +16,7 @@ node --version  # should be 18+
 
 ### 2. Get your Woopicx API Key
 
-Public test key: `wpx_live_2cc034849a7fa88889044181170ee259`
-
-Or generate your own at: https://woopicx.com/admin/api-keys
+Get a free API key at https://woopicx.com/api (sign in, then create a key).
 
 ### 3. Add to Cursor settings.json
 
@@ -32,7 +30,7 @@ Add:
       "command": "node",
       "args": ["/absolute/path/to/woopicx-mcp/index.js"],
       "env": {
-        "WOOPICX_API_KEY": "wpx_live_2cc034849a7fa88889044181170ee259"
+        "WOOPICX_API_KEY": "YOUR_WOOPICX_API_KEY"
       }
     }
   }
@@ -58,7 +56,7 @@ Cursor will automatically call `search_woopicx` tool with your query.
       "command": "node",
       "args": ["/path/to/woopicx-mcp.js"],
       "env": {
-        "WOOPICX_API_KEY": "wpx_live_2cc034849a7fa88889044181170ee259"
+        "WOOPICX_API_KEY": "YOUR_WOOPICX_API_KEY"
       }
     }
   }

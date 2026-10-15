@@ -14,8 +14,11 @@
 import { createInterface } from "node:readline";
 
 const API_BASE = process.env.WOOPICX_API_BASE || "https://api.woopicx.com";
-const API_KEY =
-  process.env.WOOPICX_API_KEY || "wpx_live_2cc034849a7fa88889044181170ee259";
+const API_KEY = process.env.WOOPICX_API_KEY;
+if (!API_KEY) {
+  console.error("WOOPICX_API_KEY is not set. Get a free key at https://woopicx.com/api");
+  process.exit(1);
+}
 const PROTOCOL_VERSION = "2024-11-05";
 
 const TOOLS = [
